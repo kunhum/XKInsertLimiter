@@ -130,8 +130,9 @@
     NSMutableString* __block buffer = [NSMutableString stringWithCapacity:validText.length];
     
     [validText enumerateSubstringsInRange:NSMakeRange(0, validText.length) options:NSStringEnumerationByComposedCharacterSequences usingBlock: ^(NSString* substring, NSRange substringRange, NSRange enclosingRange, BOOL* stop) {
-        [buffer appendString:([substring xk_isEmoji] ? @"": substring)];
+        [buffer appendString:([self isEmoji:substring] ? @"": substring)];
     }];
+    
     return buffer;
 }
 #pragma mark 通过正则过滤
@@ -141,7 +142,7 @@
         
         NSString *string = [validText substringFromIndex:i];
         
-        if ([string xk_matchWithRegex:kChineseRegex]) {
+        if ([self string:string matchWithRegex:kChineseRegex]) {
             //替换空字符串
             validText = [validText stringByReplacingOccurrencesOfString:string withString:@""];
         }
@@ -172,6 +173,34 @@
     return validText;
 }
 
+#pragma mark emoji判断
+- (BOOL)isEmoji:(NSString *)string {
+    
+    NSCharacterSet *variationSelectors = [NSCharacterSet characterSetWithRange:NSMakeRange(0xFE00, 16)];
+    
+    if ([string rangeOfCharacterFromSet: variationSelectors].location != NSNotFound) {
+        return YES;
+    }
+    
+    const unichar high = [string characterAtIndex: 0];
+    
+    //(U+1D000-1F9FF)
+    if (0xD800 <= high && high <= 0xDBFF) {
+        const unichar low = [string characterAtIndex: 1];
+        const int codepoint = ((high - 0xD800) * 0x400) + (low - 0xDC00) + 0x10000;
+        
+        return (0x1D000 <= codepoint && codepoint <= 0x1F9FF);
+        
+        //(U+2100-27BF)
+    } else {
+        return (0x2100 <= high && high <= 0x27BF);
+    }
+}
+#pragma mark 正则判断
+- (BOOL)string:(NSString *)string matchWithRegex:(NSString *)regex {
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
+    return [predicate evaluateWithObject:string];
+}
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];

@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XKInsertLimit: a79a462eb4f5081efb5e895b3ba9f4b9ba47bc81
+  XKInsertLimit: 0562dd3c26c28da756d40099929ae67903a01bca
 
 PODFILE CHECKSUM: 2fabb0a9bc832c1be3c8528aadaac62e370251c6
 
