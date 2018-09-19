@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XKInsertLimit_Example' do
+  pod 'XKInsertLimit', :path => '../'
+
+  target 'XKInsertLimit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
