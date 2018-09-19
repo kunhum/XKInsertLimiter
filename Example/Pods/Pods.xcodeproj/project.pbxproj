@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		207F73710CE159C766CA4DDAEBC77F78 /* Pods-XKInsertLimit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B9D73529654B5C4BB314082ABC8B9AA /* Pods-XKInsertLimit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23B29F24071BF136E53B6E4398F1BBA6 /* XKInsertLimit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D69BEF458071D3AEE6D10E3A4BA79538 /* XKInsertLimit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E17B5948E4307B66E6768065A579CC6 /* Pods-XKInsertLimit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E37CDF939CF2E06C529F456E507B40B6 /* Pods-XKInsertLimit_Tests-dummy.m */; };
+		47C9A8E8CCA4571D67DEBC9E9F4A1A91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		54F9D13A28140795AD901727E1C3FDCE /* XKInsertLimit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEF5B02B99D47089C14CC8AED33D046 /* XKInsertLimit-dummy.m */; };
+		6B0FC23C86FA5990CBEFFB627349182D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		79E736BCAE2C4CD7638C06174F18FFDB /* XKInsertLimiter.h in Headers */ = {isa = PBXBuildFile; fileRef = E3941B171993D78701E04EAAAC29C695 /* XKInsertLimiter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80217B56E5930A3C82EA51C730364997 /* Pods-XKInsertLimit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CD0F57CB0194CDA45AAAB479DBC7BBD /* Pods-XKInsertLimit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5ADBAA802B12C804789688C7421A79B /* XKInsertLimiter.m in Sources */ = {isa = PBXBuildFile; fileRef = 070B9823DCEDC4B0B2BE7BAB0415F29F /* XKInsertLimiter.m */; };
+		A944D4CD75C2579D530DA6784E030857 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		FA3FCDD278113C5B3A7801DE93A996CA /* Pods-XKInsertLimit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F28E8C587A97B7E4DCF71DD3ED8C3575 /* Pods-XKInsertLimit_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E21571548F707B4E55ED8FD630FCDEBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04C3333F36420E11DA60D29D69E90B3E;
+			remoteInfo = XKInsertLimit;
+		};
+		F15A59924861820D1531B3C8E32E6D8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 328FF0B20DEB4545135BA849AAAC21F6;
+			remoteInfo = "Pods-XKInsertLimit_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02AE481AE2FA03926DC5DAE80C11F9E1 /* XKInsertLimit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XKInsertLimit.modulemap; sourceTree = "<group>"; };
+		070B9823DCEDC4B0B2BE7BAB0415F29F /* XKInsertLimiter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XKInsertLimiter.m; path = XKInsertLimit/Classes/XKInsertLimiter/XKInsertLimiter.m; sourceTree = "<group>"; };
+		168BF78846305766697B6A3B8E08A8A6 /* Pods_XKInsertLimit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XKInsertLimit_Tests.framework; path = "Pods-XKInsertLimit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B68F17298EF1D59B0555685E5DEDB27 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E2FDFA1A20D48C1E4149204EDF6778F /* Pods-XKInsertLimit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XKInsertLimit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3A0BF64CE0DBFC36D596C3CC9BE7B87D /* Pods-XKInsertLimit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XKInsertLimit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3B9D73529654B5C4BB314082ABC8B9AA /* Pods-XKInsertLimit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XKInsertLimit_Example-umbrella.h"; sourceTree = "<group>"; };
+		444DFD59D29F955D2E4179DC0EA50621 /* Pods-XKInsertLimit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XKInsertLimit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5B03BA3C14802B1007C163E1BACBAC2F /* XKInsertLimit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XKInsertLimit-prefix.pch"; sourceTree = "<group>"; };
+		5BFA970A91D8C6C6606D0827ED2BBE44 /* Pods-XKInsertLimit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XKInsertLimit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5C7012F106C5C11DC24D5D4888206FDB /* XKInsertLimit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XKInsertLimit.framework; path = XKInsertLimit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CD0F57CB0194CDA45AAAB479DBC7BBD /* Pods-XKInsertLimit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XKInsertLimit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6D73FA9BC260325361D9F7EAD5CF5327 /* Pods-XKInsertLimit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XKInsertLimit_Tests.modulemap"; sourceTree = "<group>"; };
+		7C6D9F170E72E99FA57DBF15499BEE9B /* XKInsertLimit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XKInsertLimit.xcconfig; sourceTree = "<group>"; };
+		91ECEF5889D6D5FA28D1EF25206B761F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ADE7774382ADF1DCD755BB837FBE07AE /* Pods-XKInsertLimit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XKInsertLimit_Tests-resources.sh"; sourceTree = "<group>"; };
+		B2F41F27D5C6211A4907E5AE847535EF /* Pods-XKInsertLimit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XKInsertLimit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BAEF5B02B99D47089C14CC8AED33D046 /* XKInsertLimit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XKInsertLimit-dummy.m"; sourceTree = "<group>"; };
+		BD5C7476EAFABFA87A1FA963126EA414 /* Pods_XKInsertLimit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XKInsertLimit_Example.framework; path = "Pods-XKInsertLimit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE98187C765FB8BEF3A00586435DCF53 /* Pods-XKInsertLimit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XKInsertLimit_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		BEAC2FF65CBEAE97A4222DE99A9DDCC0 /* Pods-XKInsertLimit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XKInsertLimit_Example-resources.sh"; sourceTree = "<group>"; };
+		C0F47854899AF2AD44162E1040940897 /* Pods-XKInsertLimit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XKInsertLimit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C72A45E66E38A0A2D8974353FBA1E6C9 /* Pods-XKInsertLimit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XKInsertLimit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		D1C05BA00D9C6D8E38102D0614B0C61F /* Pods-XKInsertLimit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XKInsertLimit_Example.modulemap"; sourceTree = "<group>"; };
+		D2B7D8111871B678EE3A67F7AA39C3FC /* XKInsertLimit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = XKInsertLimit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D69BEF458071D3AEE6D10E3A4BA79538 /* XKInsertLimit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XKInsertLimit-umbrella.h"; sourceTree = "<group>"; };
+		DBE640FC85B5811916BA1E2AB1C41D07 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DD51AFA4F4C6961AE54F6975EBF8ACC1 /* Pods-XKInsertLimit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XKInsertLimit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E37CDF939CF2E06C529F456E507B40B6 /* Pods-XKInsertLimit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XKInsertLimit_Tests-dummy.m"; sourceTree = "<group>"; };
+		E3941B171993D78701E04EAAAC29C695 /* XKInsertLimiter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XKInsertLimiter.h; path = XKInsertLimit/Classes/XKInsertLimiter/XKInsertLimiter.h; sourceTree = "<group>"; };
+		E97BC5D32CB4F52E8173064F308CB4BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFEFDC9474AF1F7A46E3CDCAF45F10FA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F28E8C587A97B7E4DCF71DD3ED8C3575 /* Pods-XKInsertLimit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XKInsertLimit_Example-dummy.m"; sourceTree = "<group>"; };
+		F5B456F9CC0BA105A7AB7F98CD196664 /* Pods-XKInsertLimit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XKInsertLimit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		171A93C43586B85FCEACF0E07CE4665C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B0FC23C86FA5990CBEFFB627349182D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE4AA2E2D6126689092D62F6D9C878E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47C9A8E8CCA4571D67DEBC9E9F4A1A91 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		666E03595FABB967C0B7098976615125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A944D4CD75C2579D530DA6784E030857 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E28E430EDA24EF064DAD3F463243A3A /* Pods-XKInsertLimit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1B68F17298EF1D59B0555685E5DEDB27 /* Info.plist */,
+				6D73FA9BC260325361D9F7EAD5CF5327 /* Pods-XKInsertLimit_Tests.modulemap */,
+				F5B456F9CC0BA105A7AB7F98CD196664 /* Pods-XKInsertLimit_Tests-acknowledgements.markdown */,
+				DD51AFA4F4C6961AE54F6975EBF8ACC1 /* Pods-XKInsertLimit_Tests-acknowledgements.plist */,
+				E37CDF939CF2E06C529F456E507B40B6 /* Pods-XKInsertLimit_Tests-dummy.m */,
+				BE98187C765FB8BEF3A00586435DCF53 /* Pods-XKInsertLimit_Tests-frameworks.sh */,
+				ADE7774382ADF1DCD755BB837FBE07AE /* Pods-XKInsertLimit_Tests-resources.sh */,
+				6CD0F57CB0194CDA45AAAB479DBC7BBD /* Pods-XKInsertLimit_Tests-umbrella.h */,
+				B2F41F27D5C6211A4907E5AE847535EF /* Pods-XKInsertLimit_Tests.debug.xcconfig */,
+				C0F47854899AF2AD44162E1040940897 /* Pods-XKInsertLimit_Tests.release.xcconfig */,
+			);
+			name = "Pods-XKInsertLimit_Tests";
+			path = "Target Support Files/Pods-XKInsertLimit_Tests";
+			sourceTree = "<group>";
+		};
+		242699CAB667D35825FA235B784DCB78 /* Pods-XKInsertLimit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				91ECEF5889D6D5FA28D1EF25206B761F /* Info.plist */,
+				D1C05BA00D9C6D8E38102D0614B0C61F /* Pods-XKInsertLimit_Example.modulemap */,
+				5BFA970A91D8C6C6606D0827ED2BBE44 /* Pods-XKInsertLimit_Example-acknowledgements.markdown */,
+				C72A45E66E38A0A2D8974353FBA1E6C9 /* Pods-XKInsertLimit_Example-acknowledgements.plist */,
+				F28E8C587A97B7E4DCF71DD3ED8C3575 /* Pods-XKInsertLimit_Example-dummy.m */,
+				444DFD59D29F955D2E4179DC0EA50621 /* Pods-XKInsertLimit_Example-frameworks.sh */,
+				BEAC2FF65CBEAE97A4222DE99A9DDCC0 /* Pods-XKInsertLimit_Example-resources.sh */,
+				3B9D73529654B5C4BB314082ABC8B9AA /* Pods-XKInsertLimit_Example-umbrella.h */,
+				1E2FDFA1A20D48C1E4149204EDF6778F /* Pods-XKInsertLimit_Example.debug.xcconfig */,
+				3A0BF64CE0DBFC36D596C3CC9BE7B87D /* Pods-XKInsertLimit_Example.release.xcconfig */,
+			);
+			name = "Pods-XKInsertLimit_Example";
+			path = "Target Support Files/Pods-XKInsertLimit_Example";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		68E235760748B694BADF52FA34832F2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD5C7476EAFABFA87A1FA963126EA414 /* Pods_XKInsertLimit_Example.framework */,
+				168BF78846305766697B6A3B8E08A8A6 /* Pods_XKInsertLimit_Tests.framework */,
+				5C7012F106C5C11DC24D5D4888206FDB /* XKInsertLimit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				8C8E4A70693197D42377AE9953444C05 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				68E235760748B694BADF52FA34832F2D /* Products */,
+				C73B451ECDAC3F9BA5FFCF2B11A8982E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		83F10992F67E7C6DFD28F1D00A45942A /* XKInsertLimit */ = {
+			isa = PBXGroup;
+			children = (
+				E3941B171993D78701E04EAAAC29C695 /* XKInsertLimiter.h */,
+				070B9823DCEDC4B0B2BE7BAB0415F29F /* XKInsertLimiter.m */,
+				C9D8B94379DDD64F9976A1D07BFAF1CA /* Pod */,
+				9964AE3A577A76A3FE1606310CFCA3D4 /* Support Files */,
+			);
+			name = XKInsertLimit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		8C8E4A70693197D42377AE9953444C05 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83F10992F67E7C6DFD28F1D00A45942A /* XKInsertLimit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9964AE3A577A76A3FE1606310CFCA3D4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E97BC5D32CB4F52E8173064F308CB4BE /* Info.plist */,
+				02AE481AE2FA03926DC5DAE80C11F9E1 /* XKInsertLimit.modulemap */,
+				7C6D9F170E72E99FA57DBF15499BEE9B /* XKInsertLimit.xcconfig */,
+				BAEF5B02B99D47089C14CC8AED33D046 /* XKInsertLimit-dummy.m */,
+				5B03BA3C14802B1007C163E1BACBAC2F /* XKInsertLimit-prefix.pch */,
+				D69BEF458071D3AEE6D10E3A4BA79538 /* XKInsertLimit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XKInsertLimit";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C73B451ECDAC3F9BA5FFCF2B11A8982E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				242699CAB667D35825FA235B784DCB78 /* Pods-XKInsertLimit_Example */,
+				0E28E430EDA24EF064DAD3F463243A3A /* Pods-XKInsertLimit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C9D8B94379DDD64F9976A1D07BFAF1CA /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				DBE640FC85B5811916BA1E2AB1C41D07 /* LICENSE */,
+				EFEFDC9474AF1F7A46E3CDCAF45F10FA /* README.md */,
+				D2B7D8111871B678EE3A67F7AA39C3FC /* XKInsertLimit.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1644D4A5F2C37F8B70A3C257DA72A0EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B29F24071BF136E53B6E4398F1BBA6 /* XKInsertLimit-umbrella.h in Headers */,
+				79E736BCAE2C4CD7638C06174F18FFDB /* XKInsertLimiter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B1CC210A7906CAFC2E81B45BDFE7681 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				207F73710CE159C766CA4DDAEBC77F78 /* Pods-XKInsertLimit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC8F14F0F017F7B8596325E08FC1C6B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80217B56E5930A3C82EA51C730364997 /* Pods-XKInsertLimit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		04C3333F36420E11DA60D29D69E90B3E /* XKInsertLimit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF74B1EE61A483D09287268C0E5909C /* Build configuration list for PBXNativeTarget "XKInsertLimit" */;
+			buildPhases = (
+				1644D4A5F2C37F8B70A3C257DA72A0EB /* Headers */,
+				4ED23DE484A81C4528A339B6B804CF68 /* Sources */,
+				666E03595FABB967C0B7098976615125 /* Frameworks */,
+				5FD47CD7724DBF077D6ECECD9783BE4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XKInsertLimit;
+			productName = XKInsertLimit;
+			productReference = 5C7012F106C5C11DC24D5D4888206FDB /* XKInsertLimit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		328FF0B20DEB4545135BA849AAAC21F6 /* Pods-XKInsertLimit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34C9AAEB3C5F2FED673391FE539CC98 /* Build configuration list for PBXNativeTarget "Pods-XKInsertLimit_Example" */;
+			buildPhases = (
+				3B1CC210A7906CAFC2E81B45BDFE7681 /* Headers */,
+				961AB2F9B88C7AAB7FD47C07F481AFC2 /* Sources */,
+				1AE4AA2E2D6126689092D62F6D9C878E /* Frameworks */,
+				17D472EA2AD76FCB290C7FF28456E7FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EC13F57DDF4DFE6549B28B770BDC3E8 /* PBXTargetDependency */,
+			);
+			name = "Pods-XKInsertLimit_Example";
+			productName = "Pods-XKInsertLimit_Example";
+			productReference = BD5C7476EAFABFA87A1FA963126EA414 /* Pods_XKInsertLimit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4B8E364B7D78B6B0B14985A91724F517 /* Pods-XKInsertLimit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68F95ECEA936378F58D8FEA6C57BF363 /* Build configuration list for PBXNativeTarget "Pods-XKInsertLimit_Tests" */;
+			buildPhases = (
+				FC8F14F0F017F7B8596325E08FC1C6B2 /* Headers */,
+				007C35341073E46DE101763904515579 /* Sources */,
+				171A93C43586B85FCEACF0E07CE4665C /* Frameworks */,
+				0E933793CC9085E28156D8D8E8CB7731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B32836E1F0C21C6520C6FDC1EEA90A6F /* PBXTargetDependency */,
+			);
+			name = "Pods-XKInsertLimit_Tests";
+			productName = "Pods-XKInsertLimit_Tests";
+			productReference = 168BF78846305766697B6A3B8E08A8A6 /* Pods_XKInsertLimit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 68E235760748B694BADF52FA34832F2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				328FF0B20DEB4545135BA849AAAC21F6 /* Pods-XKInsertLimit_Example */,
+				4B8E364B7D78B6B0B14985A91724F517 /* Pods-XKInsertLimit_Tests */,
+				04C3333F36420E11DA60D29D69E90B3E /* XKInsertLimit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E933793CC9085E28156D8D8E8CB7731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17D472EA2AD76FCB290C7FF28456E7FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FD47CD7724DBF077D6ECECD9783BE4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		007C35341073E46DE101763904515579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E17B5948E4307B66E6768065A579CC6 /* Pods-XKInsertLimit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED23DE484A81C4528A339B6B804CF68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F9D13A28140795AD901727E1C3FDCE /* XKInsertLimit-dummy.m in Sources */,
+				A5ADBAA802B12C804789688C7421A79B /* XKInsertLimiter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961AB2F9B88C7AAB7FD47C07F481AFC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3FCDD278113C5B3A7801DE93A996CA /* Pods-XKInsertLimit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0EC13F57DDF4DFE6549B28B770BDC3E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XKInsertLimit;
+			target = 04C3333F36420E11DA60D29D69E90B3E /* XKInsertLimit */;
+			targetProxy = E21571548F707B4E55ED8FD630FCDEBD /* PBXContainerItemProxy */;
+		};
+		B32836E1F0C21C6520C6FDC1EEA90A6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-XKInsertLimit_Example";
+			target = 328FF0B20DEB4545135BA849AAAC21F6 /* Pods-XKInsertLimit_Example */;
+			targetProxy = F15A59924861820D1531B3C8E32E6D8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B1705389E25856D1239F577208576AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0F47854899AF2AD44162E1040940897 /* Pods-XKInsertLimit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XKInsertLimit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XKInsertLimit_Tests/Pods-XKInsertLimit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		321C70DE13A4F332AC5A9606D1784240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2F41F27D5C6211A4907E5AE847535EF /* Pods-XKInsertLimit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XKInsertLimit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XKInsertLimit_Tests/Pods-XKInsertLimit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56A05ADD3BABDA1B56D1F979845809B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		59266EA208D1A034B101C8372625C44D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C6D9F170E72E99FA57DBF15499BEE9B /* XKInsertLimit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XKInsertLimit/XKInsertLimit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XKInsertLimit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XKInsertLimit/XKInsertLimit.modulemap";
+				PRODUCT_MODULE_NAME = XKInsertLimit;
+				PRODUCT_NAME = XKInsertLimit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7F8ACFB53F475277593491C77B14C536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2FDFA1A20D48C1E4149204EDF6778F /* Pods-XKInsertLimit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XKInsertLimit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XKInsertLimit_Example/Pods-XKInsertLimit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B1279BCE17C372C2AD77A180B1D07AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A0BF64CE0DBFC36D596C3CC9BE7B87D /* Pods-XKInsertLimit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XKInsertLimit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XKInsertLimit_Example/Pods-XKInsertLimit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BEFDB93BF207328A04F1220475D02C3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DA4B9FCC47E783DF7A3550D3D384E87B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C6D9F170E72E99FA57DBF15499BEE9B /* XKInsertLimit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XKInsertLimit/XKInsertLimit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XKInsertLimit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XKInsertLimit/XKInsertLimit.modulemap";
+				PRODUCT_MODULE_NAME = XKInsertLimit;
+				PRODUCT_NAME = XKInsertLimit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFDB93BF207328A04F1220475D02C3B /* Debug */,
+				56A05ADD3BABDA1B56D1F979845809B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68F95ECEA936378F58D8FEA6C57BF363 /* Build configuration list for PBXNativeTarget "Pods-XKInsertLimit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				321C70DE13A4F332AC5A9606D1784240 /* Debug */,
+				0B1705389E25856D1239F577208576AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEF74B1EE61A483D09287268C0E5909C /* Build configuration list for PBXNativeTarget "XKInsertLimit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4B9FCC47E783DF7A3550D3D384E87B /* Debug */,
+				59266EA208D1A034B101C8372625C44D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E34C9AAEB3C5F2FED673391FE539CC98 /* Build configuration list for PBXNativeTarget "Pods-XKInsertLimit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F8ACFB53F475277593491C77B14C536 /* Debug */,
+				B1279BCE17C372C2AD77A180B1D07AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

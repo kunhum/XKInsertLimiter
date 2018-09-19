@@ -1,0 +1,6 @@
+framework module XKInsertLimit {
+  umbrella header "XKInsertLimit-umbrella.h"
+
+  export *
+  module * { export * }
+}

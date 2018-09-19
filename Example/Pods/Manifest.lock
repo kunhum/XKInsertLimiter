@@ -1,0 +1,16 @@
+PODS:
+  - XKInsertLimit (1.0.0)
+
+DEPENDENCIES:
+  - XKInsertLimit (from `../`)
+
+EXTERNAL SOURCES:
+  XKInsertLimit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XKInsertLimit: a79a462eb4f5081efb5e895b3ba9f4b9ba47bc81
+
+PODFILE CHECKSUM: 2fabb0a9bc832c1be3c8528aadaac62e370251c6
+
+COCOAPODS: 1.5.3

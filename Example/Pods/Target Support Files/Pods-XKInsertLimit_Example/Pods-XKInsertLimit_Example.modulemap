@@ -1,0 +1,6 @@
+framework module Pods_XKInsertLimit_Example {
+  umbrella header "Pods-XKInsertLimit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
