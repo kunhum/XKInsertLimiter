@@ -27,6 +27,13 @@
  */
 - (void)xk_fliterWithValidCharacters:(NSString *)validCharacters;
 
+/**
+ 通过正则过滤，过滤正则外的字符
+
+ @param regex 正则
+ */
+- (void)xk_fliterWithRegex:(NSString *)regex;
+
 ///限制输入的长度
 @property (nonatomic, assign) NSUInteger maxLength;
 ///是否过滤emoji

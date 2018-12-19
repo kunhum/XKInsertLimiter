@@ -12,6 +12,8 @@
 
 @property (nonatomic, copy) NSString *validCharacters;
 
+@property (nonatomic, copy) NSString *regex;
+
 @end
 
 @implementation XKInsertLimiter
@@ -54,6 +56,10 @@
     if (numberLimited) {
         [self xk_fliterWithValidCharacters:@"0123456789"];
     }
+}
+#pragma mark 正则过滤
+- (void)xk_fliterWithRegex:(NSString *)regex {
+    self.regex = regex;
 }
 
 #pragma mark - 私有方法
@@ -108,6 +114,11 @@
         validText = [self fliterWithValidCharacters:validText];
     }
     
+    //正则过滤
+    if (self.regex) {
+        validText = [self fliterText:validText whichOutsideRegex:self.regex];
+    }
+    
     return validText;
 }
 
@@ -141,14 +152,24 @@
     for (int i = 0; i < validText.length; i++) {
         
         NSString *string = [validText substringFromIndex:i];
-        
-        if ([self string:string matchWithRegex:kChineseRegex]) {
+        if ([self string:string matchWithRegex:regex]) {
             //替换空字符串
             validText = [validText stringByReplacingOccurrencesOfString:string withString:@""];
         }
         
     }
     return validText;
+}
+#pragma mark 过滤正则外的字符
+- (NSString *)fliterText:(NSString *)validText whichOutsideRegex:(NSString *)regex {
+    
+    NSMutableString* __block buffer = [NSMutableString stringWithCapacity:validText.length];
+    
+    
+    [validText enumerateSubstringsInRange:NSMakeRange(0, validText.length) options:NSStringEnumerationByComposedCharacterSequences usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
+        [buffer appendString:([self string:substring matchWithRegex:regex] ? substring : @"")];
+    }];
+    return buffer;
 }
 #pragma mark 长度限制处理
 - (NSString *)handleLengthLimitedWithPosition:(UITextPosition *)position validText:(NSString *)validText {

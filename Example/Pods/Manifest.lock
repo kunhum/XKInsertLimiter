@@ -1,5 +1,5 @@
 PODS:
-  - XKInsertLimit (1.0.0)
+  - XKInsertLimit (1.0.1)
 
 DEPENDENCIES:
   - XKInsertLimit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XKInsertLimit: 0562dd3c26c28da756d40099929ae67903a01bca
+  XKInsertLimit: 9eaca0010df8f565add5e3aa0eb7ec6db34d809f
 
 PODFILE CHECKSUM: 2fabb0a9bc832c1be3c8528aadaac62e370251c6
 
