@@ -69,6 +69,10 @@
     
     UITextView *textView = (UITextView *)notification.object;
     
+    UITextRange *selectedRange = [textView markedTextRange];
+    NSString *newText = [textView textInRange:selectedRange];//获取高亮部分
+    if(newText.length > 0) return;
+    
     textView.text = [self handleFliterCaseWithLimitedObject:textView];
     
     if (self.getCurrentLength) self.getCurrentLength(textView, textView.text.length);
@@ -79,6 +83,10 @@
 - (void)textFieldEditChanged:(NSNotification *)notification {
     
     UITextField *textField = (UITextField *)notification.object;
+    
+    UITextRange *selectedRange = [textField markedTextRange];
+    NSString *newText = [textField textInRange:selectedRange];//获取高亮部分
+    if(newText.length > 0) return;
     
     textField.text = [self handleFliterCaseWithLimitedObject:textField];
     
